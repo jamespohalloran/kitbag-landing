@@ -35,21 +35,17 @@ export default function Faq() {
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "Is Kitbag completely free to use? ",
+    answer: "Yep!",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
-  },
-  {
-    question: "What is your refund policy? ",
+    question: "Do I need to create an account? ",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "Nope! But it's best to do so if you want to save your trips and share them with friends.",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "Where can I follow development? ",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "Kitbag is developed by James O'Halloran. You can follow his progress on Twitter @jamesohalloran.",
   },
 ];
