@@ -3,13 +3,12 @@ import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 
-import { benefitOne, benefitTwo } from "../components/data";
-import Video from "../components/video";
+import { benefitOne } from "../components/data";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
-import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
+import { NextSeo } from "next-seo";
 
 //import dynamic from "next/dynamic";
 
@@ -27,13 +26,27 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
-        <meta
-          name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
-        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <NextSeo
+        title="Kitbag.io - Plan awesome trips"
+        description="Plan awesome trips around your favorite things. Bands, Sports Teams. Comedians, Musicals...Whatever you're into!"
+        openGraph={{
+          url: "https://kitbag.io",
+          title: "Kitbag.io",
+          description:
+            "Plan awesome trips around your favorite things. Bands, Sports Teams. Comedians, Musicals...Whatever you're into!",
+          images: [
+            {
+              url: "https://app.kitbag.io/social-img.png",
+              width: 1600,
+              height: 900,
+              alt: "Kitbag.io",
+              type: "image/png",
+            },
+          ],
+        }}
+      />
 
       <Navbar />
       <Hero />

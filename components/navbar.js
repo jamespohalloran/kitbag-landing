@@ -61,7 +61,7 @@ export default function Navbar() {
                         </a>
                       </Link>
                     ))}
-                    <Link href="/">
+                    <Link href="https://app.kitbag.io">
                       <a className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
                         Get Started
                       </a>
@@ -95,7 +95,7 @@ export default function Navbar() {
             </a>
           </Link>
 
-          <ThemeChanger />
+          {/* <ThemeChanger /> */}
         </div>
       </nav>
     </div>
