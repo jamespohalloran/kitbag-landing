@@ -4,8 +4,6 @@ import React from "react";
 import Container from "./container";
 
 export default function Footer() {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
-  const legal = ["Terms", "Privacy", "Legal"];
   return (
     <div className="relative">
       <Container>
@@ -14,7 +12,7 @@ export default function Footer() {
             <div>
               {" "}
               <Link href="/">
-                <a className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
+                <div className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                   <span>
                     <img
                       src="/img/logo.svg"
@@ -24,7 +22,7 @@ export default function Footer() {
                       className="w-32"
                     />
                   </span>
-                </a>
+                </div>
               </Link>
             </div>
 
@@ -37,14 +35,14 @@ export default function Footer() {
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               <Link href="https://app.kitbag.io/terms">
-                <a className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
+                <div className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
                   Terms
-                </a>
+                </div>
               </Link>
               <Link href="https://app.kitbag.io/privacy">
-                <a className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
+                <div className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
                   Privacy
-                </a>
+                </div>
               </Link>
             </div>
           </div>
