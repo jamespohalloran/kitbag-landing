@@ -22,7 +22,16 @@ export default function Navbar() {
                 <Link href="https://app.kitbag.io">
                   <div className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <span>
-                      <img src="/img/logo.svg" alt="N" className="w-32" />
+                      <img
+                        src="/img/logo-dark.svg"
+                        alt="N"
+                        className="w-32 hidden dark:block"
+                      />
+                      <img
+                        src="/img/logo.svg"
+                        alt="N"
+                        className="w-32 block dark:hidden"
+                      />
                     </span>
                   </div>
                 </Link>
@@ -95,7 +104,7 @@ export default function Navbar() {
             </div>
           </Link>
 
-          {/* <ThemeChanger /> */}
+          <ThemeChanger />
         </div>
       </nav>
     </div>
